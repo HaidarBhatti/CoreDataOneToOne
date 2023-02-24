@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDEmployeEntity" representedClassName="CDEmployeEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="profilePic" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="toPassport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPassportEntity" inverseName="toEmployee" inverseEntity="CDPassportEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDPassportEntity" representedClassName="CDPassportEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="passportId" optional="YES" attributeType="String"/>
+        <attribute name="placeOfIssue" optional="YES" attributeType="String"/>
+        <relationship name="toEmployee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEmployeEntity" inverseName="toPassport" inverseEntity="CDEmployeEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="CDEmployeEntity" positionX="-45" positionY="0" width="128" height="104"/>
+        <element name="CDPassportEntity" positionX="-18" positionY="54" width="128" height="89"/>
+    </elements>
+</model>
