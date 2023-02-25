@@ -16,17 +16,18 @@ struct EmployeeDataRepository: EmployeeRepository{
     
     typealias T = Employee
     
-    func create(employee: Employee) {
-        <#code#>
+    func create(record: Employee) {
+        print("in create")
     }
     
     func getAll() -> [Employee]? {
-        let result = PersistantStorage.shared.fetchManagedObject(managedObject: CDEmployeEntity.self)
-        var allEmployees: [Employee] = []
-        result?.forEach({ employee in
-            allEmployees.append(employee.convertToEmployee())
-        })
-        return allEmployees
+//        let result = PersistantStorage.shared.fetchManagedObject(managedObject: CDEmployeEntity.self)
+//        var allEmployees: [Employee] = []
+//        result?.forEach({ employee in
+//            allEmployees.append(employee.convertToEmployee())
+//        })
+//        return allEmployees
+        return nil
     }
     
     func get(byIdentifier id: UUID) -> Employee? {
@@ -35,12 +36,9 @@ struct EmployeeDataRepository: EmployeeRepository{
         return result?.convertToEmployee()
     }
     
-    func update(employee: Employee) -> Bool {
-        let cdEmployee = getCDEmployee(byIdentifier: employee.id)
+    func update(record: Employee) -> Bool {
+        let cdEmployee = getCDEmployee(byIdentifier: record.id)
         guard cdEmployee != nil else { return false }
-        cdEmployee?.profilePic = employee.profilePic
-        cdEmployee?.name = employee.name
-        cdEmployee?.email = employee.email
         PersistantStorage.shared.saveContext()
         return true
     }

@@ -11,7 +11,7 @@ import CoreData
 final class PersistantStorage{
     
     private init(){}
-    static let shared = PersistenceStorage()
+    static let shared = PersistantStorage()
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreDataOneToOneDemo")
@@ -34,5 +34,15 @@ final class PersistantStorage{
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func fetchManagedObject<T: NSManagedObject>(managedObject: T.Type) -> [T]?{
+        do {
+            guard let result = try PersistantStorage.shared.context.fetch(managedObject.fetchRequest()) as [T]? else { return nil }
+            return result
+        } catch let error {
+            debugPrint(error)
+        }
+        return nil
     }
 }

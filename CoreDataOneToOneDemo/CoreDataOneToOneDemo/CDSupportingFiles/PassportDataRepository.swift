@@ -17,24 +17,25 @@ struct PassportDataRepository: PassportRepository{
     typealias T = Passport
 
     func create(record: Passport) {
-        let cdEmployee = CDPassportEntity(context: PersistantStorage.shared.context)
-        
+        let cdPassport = CDPassportEntity(context: PersistantStorage.shared.context)
         PersistantStorage.shared.saveContext()
     }
     
     func getAll() -> [Passport]? {
-        let result = PersistantStorage.shared.fetchManagedObject(managedObject: CDPassportEntity.self)
-        var allEmployees: [Passport] = []
-        result?.forEach({ employee in
-            allEmployees.append(employee.convertToEmployee())
-        })
-        return allEmployees
+//        let result = PersistantStorage.shared.fetchManagedObject(managedObject: CDPassportEntity.self)
+//        var allEmployees: [Passport] = []
+//        result?.forEach({ employee in
+//            allEmployees.append(employee.convertToEmployee())
+//        })
+//        return allEmployees
+        return nil
     }
     
     func get(byIdentifier id: UUID) -> Passport? {
-        let result = getCDPassportEntity(byIdentifier: id)
-        guard result != nil else { return nil }
-        return result?.convertToEmployee()
+//        let result = getCDPassportEntity(byIdentifier: id)
+//        guard result != nil else { return nil }
+//        return result?.convertToEmployee()
+        return nil
     }
     
     func update(record: Passport) -> Bool {
