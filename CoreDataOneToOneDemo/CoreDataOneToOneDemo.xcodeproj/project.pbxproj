@@ -22,7 +22,6 @@
 		DC1985CC29A8BA4500178FA3 /* Passport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985CB29A8BA4500178FA3 /* Passport.swift */; };
 		DC1985CE29A8C8C400178FA3 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985CD29A8C8C400178FA3 /* BaseRepository.swift */; };
 		DC1985D029A8C94D00178FA3 /* EmployeeDataaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985CF29A8C94D00178FA3 /* EmployeeDataaRepository.swift */; };
-		DC1985D229A8C98400178FA3 /* PassportDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985D129A8C98400178FA3 /* PassportDataRepository.swift */; };
 		DC1985D529A8CAEF00178FA3 /* CDPassportEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985D429A8CAEF00178FA3 /* CDPassportEntityExtension.swift */; };
 		DC1985D729A8CAFE00178FA3 /* CDEmployeEntityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985D629A8CAFE00178FA3 /* CDEmployeEntityExtension.swift */; };
 		DC1985DC29A8CC6F00178FA3 /* CDPassportEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985D829A8CC6F00178FA3 /* CDPassportEntity+CoreDataClass.swift */; };
@@ -31,6 +30,9 @@
 		DC1985DF29A8CC6F00178FA3 /* CDEmployeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1985DB29A8CC6F00178FA3 /* CDEmployeEntity+CoreDataProperties.swift */; };
 		DC37C59129A93B0D00D2BD82 /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37C59029A93B0D00D2BD82 /* EmployeeListVC.swift */; };
 		DC37C59329A93B3F00D2BD82 /* PassportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37C59229A93B3F00D2BD82 /* PassportVC.swift */; };
+		DC819E0329AC754D00A19590 /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC819E0229AC754D00A19590 /* EmployeeManager.swift */; };
+		DC819E0B29AC85E000A19590 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */; };
+		DC819E0C29AC85E000A19590 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +72,6 @@
 		DC1985CB29A8BA4500178FA3 /* Passport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passport.swift; sourceTree = "<group>"; };
 		DC1985CD29A8C8C400178FA3 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		DC1985CF29A8C94D00178FA3 /* EmployeeDataaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataaRepository.swift; sourceTree = "<group>"; };
-		DC1985D129A8C98400178FA3 /* PassportDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportDataRepository.swift; sourceTree = "<group>"; };
 		DC1985D429A8CAEF00178FA3 /* CDPassportEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDPassportEntityExtension.swift; sourceTree = "<group>"; };
 		DC1985D629A8CAFE00178FA3 /* CDEmployeEntityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEmployeEntityExtension.swift; sourceTree = "<group>"; };
 		DC1985D829A8CC6F00178FA3 /* CDPassportEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPassportEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		DC1985DB29A8CC6F00178FA3 /* CDEmployeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDEmployeEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC37C59029A93B0D00D2BD82 /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
 		DC37C59229A93B3F00D2BD82 /* PassportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportVC.swift; sourceTree = "<group>"; };
+		DC819E0229AC754D00A19590 /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
+		DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				DC19858929A8B78600178FA3 /* AppDelegate.swift */,
+				DC19858B29A8B78600178FA3 /* SceneDelegate.swift */,
+				DC819E0129AC753A00A19590 /* Manager */,
 				DC1985C829A8BA2000178FA3 /* Models */,
 				DC1985BC29A8B79B00178FA3 /* CDSupportingFiles */,
-				DC19858B29A8B78600178FA3 /* SceneDelegate.swift */,
 				DC37C58F29A9396400D2BD82 /* Controllers */,
 				DC19858F29A8B78600178FA3 /* Main.storyboard */,
 				DC19859529A8B78800178FA3 /* Assets.xcassets */,
@@ -170,7 +175,6 @@
 				DC1985D329A8CAD700178FA3 /* Extension */,
 				DC1985CD29A8C8C400178FA3 /* BaseRepository.swift */,
 				DC1985CF29A8C94D00178FA3 /* EmployeeDataaRepository.swift */,
-				DC1985D129A8C98400178FA3 /* PassportDataRepository.swift */,
 				DC1985C629A8B91B00178FA3 /* PersistantStorage.swift */,
 			);
 			path = CDSupportingFiles;
@@ -200,8 +204,26 @@
 				DC19858D29A8B78600178FA3 /* CreateEmployeeVC.swift */,
 				DC37C59029A93B0D00D2BD82 /* EmployeeListVC.swift */,
 				DC37C59229A93B3F00D2BD82 /* PassportVC.swift */,
+				DC819E0429AC83D000A19590 /* Cell */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC819E0129AC753A00A19590 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DC819E0229AC754D00A19590 /* EmployeeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DC819E0429AC83D000A19590 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */,
+				DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC19859929A8B78800178FA3 /* LaunchScreen.storyboard in Resources */,
+				DC819E0C29AC85E000A19590 /* EmployeeTableViewCell.xib in Resources */,
 				DC19859629A8B78800178FA3 /* Assets.xcassets in Resources */,
 				DC19859129A8B78600178FA3 /* Main.storyboard in Resources */,
 			);
@@ -340,6 +363,7 @@
 				DC1985CC29A8BA4500178FA3 /* Passport.swift in Sources */,
 				DC19858E29A8B78600178FA3 /* CreateEmployeeVC.swift in Sources */,
 				DC1985D529A8CAEF00178FA3 /* CDPassportEntityExtension.swift in Sources */,
+				DC819E0329AC754D00A19590 /* EmployeeManager.swift in Sources */,
 				DC37C59129A93B0D00D2BD82 /* EmployeeListVC.swift in Sources */,
 				DC1985DC29A8CC6F00178FA3 /* CDPassportEntity+CoreDataClass.swift in Sources */,
 				DC1985CA29A8BA2C00178FA3 /* Employee.swift in Sources */,
@@ -347,8 +371,8 @@
 				DC1985DD29A8CC6F00178FA3 /* CDPassportEntity+CoreDataProperties.swift in Sources */,
 				DC19858A29A8B78600178FA3 /* AppDelegate.swift in Sources */,
 				DC1985D729A8CAFE00178FA3 /* CDEmployeEntityExtension.swift in Sources */,
+				DC819E0B29AC85E000A19590 /* EmployeeTableViewCell.swift in Sources */,
 				DC1985CE29A8C8C400178FA3 /* BaseRepository.swift in Sources */,
-				DC1985D229A8C98400178FA3 /* PassportDataRepository.swift in Sources */,
 				DC19858C29A8B78600178FA3 /* SceneDelegate.swift in Sources */,
 				DC1985DF29A8CC6F00178FA3 /* CDEmployeEntity+CoreDataProperties.swift in Sources */,
 				DC1985DE29A8CC6F00178FA3 /* CDEmployeEntity+CoreDataClass.swift in Sources */,

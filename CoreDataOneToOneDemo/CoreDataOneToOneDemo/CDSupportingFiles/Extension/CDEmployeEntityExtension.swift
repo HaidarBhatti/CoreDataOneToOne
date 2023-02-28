@@ -10,7 +10,7 @@ import CoreData
 
 extension CDEmployeEntity {
     
-    func convertToEmployee() -> Employee?{
+    func convertToEmployee() -> Employee{
         return Employee(id: self.id!,
                         email: self.email!,
                         name: self.name!,

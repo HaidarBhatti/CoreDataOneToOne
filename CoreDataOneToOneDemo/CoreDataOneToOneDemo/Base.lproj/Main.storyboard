@@ -48,14 +48,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tqm-gd-OcO">
-                                <rect key="frame" x="132" y="189.5" width="150" height="147"/>
+                                <rect key="frame" x="132" y="89.5" width="150" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="AxO-OL-soA"/>
                                     <constraint firstAttribute="width" secondItem="Tqm-gd-OcO" secondAttribute="height" id="gvf-Gb-l48"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-cN-vfc">
-                                <rect key="frame" x="24" y="378" width="366" height="166"/>
+                                <rect key="frame" x="24" y="263" width="366" height="166"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-0Z-Khn">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
@@ -80,7 +80,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Ax-PN-bEz">
-                                <rect key="frame" x="119" y="584" width="176" height="30"/>
+                                <rect key="frame" x="119" y="454" width="176" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGJ-Qc-O9W">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
@@ -110,17 +110,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Tqm-gd-OcO" firstAttribute="centerX" secondItem="XQh-cS-0Ea" secondAttribute="centerX" id="0Ps-QT-Xjp"/>
-                            <constraint firstItem="4Ax-PN-bEz" firstAttribute="top" secondItem="hTD-cN-vfc" secondAttribute="bottom" constant="40" id="93a-vH-Yei"/>
-                            <constraint firstItem="Tqm-gd-OcO" firstAttribute="top" secondItem="qXG-lO-lt4" secondAttribute="top" constant="100" id="SXq-yo-eej"/>
+                            <constraint firstItem="4Ax-PN-bEz" firstAttribute="top" secondItem="hTD-cN-vfc" secondAttribute="bottom" constant="25" id="93a-vH-Yei"/>
+                            <constraint firstItem="Tqm-gd-OcO" firstAttribute="top" secondItem="qXG-lO-lt4" secondAttribute="top" id="SXq-yo-eej"/>
                             <constraint firstItem="hTD-cN-vfc" firstAttribute="leading" secondItem="qXG-lO-lt4" secondAttribute="leading" constant="24" id="SZY-7f-J4Z"/>
                             <constraint firstItem="hTD-cN-vfc" firstAttribute="centerX" secondItem="XQh-cS-0Ea" secondAttribute="centerX" id="bFA-Wv-G8N"/>
                             <constraint firstItem="4Ax-PN-bEz" firstAttribute="centerX" secondItem="XQh-cS-0Ea" secondAttribute="centerX" id="mq0-DB-cdR"/>
                             <constraint firstItem="qXG-lO-lt4" firstAttribute="trailing" secondItem="hTD-cN-vfc" secondAttribute="trailing" constant="24" id="u8u-du-CWa"/>
-                            <constraint firstItem="hTD-cN-vfc" firstAttribute="top" secondItem="Tqm-gd-OcO" secondAttribute="bottom" constant="40" id="zLy-DC-r3Q"/>
+                            <constraint firstItem="hTD-cN-vfc" firstAttribute="top" secondItem="Tqm-gd-OcO" secondAttribute="bottom" constant="25" id="zLy-DC-r3Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="05R-W5-chL"/>
                     <connections>
+                        <outlet property="btnClearAll" destination="QoW-9y-MuR" id="Ok2-oD-pn8"/>
+                        <outlet property="btnSave" destination="jGJ-Qc-O9W" id="8hx-BW-rgM"/>
                         <outlet property="imgEmployee" destination="Tqm-gd-OcO" id="okJ-MP-FaW"/>
                         <outlet property="textEmail" destination="FCD-OI-3bs" id="Tql-8C-DPM"/>
                         <outlet property="textName" destination="ucs-0Z-Khn" id="dfM-xI-mAg"/>
@@ -188,13 +190,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vfB-hF-RNO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AzO-Kn-bUS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xrn-xh-aSh" kind="relationship" relationship="viewControllers" id="cXv-S4-Umc"/>
-                        <segue destination="YSL-iw-mMl" kind="relationship" relationship="viewControllers" id="2Dl-Xp-Yz0"/>
-                        <segue destination="ioW-27-On6" kind="relationship" relationship="viewControllers" id="cEP-8W-5dR"/>
+                        <segue destination="YSL-iw-mMl" kind="relationship" relationship="viewControllers" id="IbT-CB-884"/>
+                        <segue destination="xrn-xh-aSh" kind="relationship" relationship="viewControllers" id="OoV-kh-JNw"/>
+                        <segue destination="ioW-27-On6" kind="relationship" relationship="viewControllers" id="6jy-uz-ilK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uF-Cj-7ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

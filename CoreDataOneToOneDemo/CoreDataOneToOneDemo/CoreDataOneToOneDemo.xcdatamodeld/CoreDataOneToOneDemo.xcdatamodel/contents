@@ -5,7 +5,7 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="profilePic" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
-        <relationship name="toPassport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPassportEntity" inverseName="toEmployee" inverseEntity="CDPassportEntity"/>
+        <relationship name="toPassport" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDPassportEntity" inverseName="toEmployee" inverseEntity="CDPassportEntity"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>
