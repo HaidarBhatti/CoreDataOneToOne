@@ -10,7 +10,7 @@ import CoreData
 
 extension CDPassportEntity {
 
-    func convertToPassport() -> Passport?{
+    func convertToPassport() -> Passport{
         return Passport(id: self.id!,
                         passportId: self.passportId!,
                         placeOfIssue: self.placeOfIssue!,

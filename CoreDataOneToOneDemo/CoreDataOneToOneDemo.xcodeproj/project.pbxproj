@@ -33,6 +33,9 @@
 		DC819E0329AC754D00A19590 /* EmployeeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC819E0229AC754D00A19590 /* EmployeeManager.swift */; };
 		DC819E0B29AC85E000A19590 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */; };
 		DC819E0C29AC85E000A19590 /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */; };
+		DCAD17F829AE2BC300876430 /* NoDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17F629AE2BC300876430 /* NoDataTableViewCell.swift */; };
+		DCAD17F929AE2BC300876430 /* NoDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAD17F729AE2BC300876430 /* NoDataTableViewCell.xib */; };
+		DCAD17FB29AE2CC500876430 /* PassportDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17FA29AE2CC500876430 /* PassportDataRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		DC819E0229AC754D00A19590 /* EmployeeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeManager.swift; sourceTree = "<group>"; };
 		DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		DCAD17F629AE2BC300876430 /* NoDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataTableViewCell.swift; sourceTree = "<group>"; };
+		DCAD17F729AE2BC300876430 /* NoDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataTableViewCell.xib; sourceTree = "<group>"; };
+		DCAD17FA29AE2CC500876430 /* PassportDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportDataRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,7 @@
 				DC1985D329A8CAD700178FA3 /* Extension */,
 				DC1985CD29A8C8C400178FA3 /* BaseRepository.swift */,
 				DC1985CF29A8C94D00178FA3 /* EmployeeDataaRepository.swift */,
+				DCAD17FA29AE2CC500876430 /* PassportDataRepository.swift */,
 				DC1985C629A8B91B00178FA3 /* PersistantStorage.swift */,
 			);
 			path = CDSupportingFiles;
@@ -222,6 +229,8 @@
 			children = (
 				DC819E0929AC85E000A19590 /* EmployeeTableViewCell.swift */,
 				DC819E0A29AC85E000A19590 /* EmployeeTableViewCell.xib */,
+				DCAD17F629AE2BC300876430 /* NoDataTableViewCell.swift */,
+				DCAD17F729AE2BC300876430 /* NoDataTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 				DC819E0C29AC85E000A19590 /* EmployeeTableViewCell.xib in Resources */,
 				DC19859629A8B78800178FA3 /* Assets.xcassets in Resources */,
 				DC19859129A8B78600178FA3 /* Main.storyboard in Resources */,
+				DCAD17F929AE2BC300876430 /* NoDataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +370,7 @@
 			files = (
 				DC19859429A8B78600178FA3 /* CoreDataOneToOneDemo.xcdatamodeld in Sources */,
 				DC1985D029A8C94D00178FA3 /* EmployeeDataaRepository.swift in Sources */,
+				DCAD17FB29AE2CC500876430 /* PassportDataRepository.swift in Sources */,
 				DC1985CC29A8BA4500178FA3 /* Passport.swift in Sources */,
 				DC19858E29A8B78600178FA3 /* CreateEmployeeVC.swift in Sources */,
 				DC1985D529A8CAEF00178FA3 /* CDPassportEntityExtension.swift in Sources */,
@@ -368,6 +379,7 @@
 				DC1985DC29A8CC6F00178FA3 /* CDPassportEntity+CoreDataClass.swift in Sources */,
 				DC1985CA29A8BA2C00178FA3 /* Employee.swift in Sources */,
 				DC37C59329A93B3F00D2BD82 /* PassportVC.swift in Sources */,
+				DCAD17F829AE2BC300876430 /* NoDataTableViewCell.swift in Sources */,
 				DC1985DD29A8CC6F00178FA3 /* CDPassportEntity+CoreDataProperties.swift in Sources */,
 				DC19858A29A8B78600178FA3 /* AppDelegate.swift in Sources */,
 				DC1985D729A8CAFE00178FA3 /* CDEmployeEntityExtension.swift in Sources */,
